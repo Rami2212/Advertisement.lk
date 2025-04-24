@@ -20,16 +20,8 @@
 - JWT (JSON Web Tokens)
 - Google OAuth
 
-**Storage:**
-- Cloudinary / AWS S3 (for image & video uploads)
-
 **Payment Integration:**
-- Stripe / PayPal (for ad boosting)
-
-**Hosting & Deployment:**
-- Frontend: Vercel / Netlify
-- Backend: AWS / Render / DigitalOcean
-- Database: MongoDB Atlas
+- PayPal (for ad boosting)
 
 ---
 
@@ -44,28 +36,19 @@ Handles authentication, ad management, user management, and payment processing.
 **Database (MongoDB):**  
 Stores user accounts, advertisements, and transaction data.
 
-**Cloud Storage (Cloudinary / AWS S3):**  
-Handles image and video uploads.
-
-**Authentication (JWT + OAuth):**  
+**Authentication (JWT):**  
 Manages secure login, registration, and password recovery.
 
 ---
 
-## 3. Implementation Steps
+## 3. Project Structure
 
-### Step 1: Project Setup
-- Initialize a GitHub repository.
-- Set up frontend (React + Vite/Create React App) and backend (Express.js + Node.js) in separate directories.
-- Configure ESLint, Prettier, and Husky for code formatting.
-- Set up MongoDB database (MongoDB Atlas/local instance).
-
-### Step 2: User Authentication
+### User Authentication
 - Implement JWT-based authentication (register, login, logout, password reset).
 - Add Google OAuth authentication.
 - Secure protected routes for buyers, sellers, and admins.
 
-### Step 3: Customer Pages
+### Customer Pages
 - Home page
 - About us
 - Contact us
@@ -83,14 +66,14 @@ Manages secure login, registration, and password recovery.
 - Package buying page
 - Bought package details
 
-### Step 4: Admin Pages
+### Admin Pages
 - Admin Login
 - Admin dashboard
 - Manage advertisement categories
 - Manage packages
 - Profile
 
-### Step 5: Customer Functions
+### Customer Functions
 - Sign in
 - Sign up
 - Sign out
@@ -117,7 +100,7 @@ Manages secure login, registration, and password recovery.
 - View package details
 - WhatsApp integration
 
-### Step 6: Admin Functions
+### Admin Functions
 - Sign in
 - Sign up
 - Sign out
@@ -132,41 +115,27 @@ Manages secure login, registration, and password recovery.
 - View package
 - View package orders
 
-### Step 7: Search & Filtering
+### Search & Filtering
 - Implement keyword-based search.
 - Add category-based filtering.
 - Enable location-based filtering.
 - Implement sorting (newest, price high to low, etc.).
 
-### Step 8: Ad Boosting & Payments
+### Ad Boosting & Payments
 - Set ad visibility duration (default: 3 days free, then hidden).
 - Implement Stripe/PayPal payment gateway for ad boosting.
 - Enable profile boosting for higher visibility.
 - Add a manual social media promotion request feature.
 
-### Step 9: User Dashboards
+### User Dashboards
 - **Buyer Dashboard:** View saved ads.
 - **Seller Dashboard:** Manage ads and purchased packages.
 - **Admin Panel:** Moderate ads, approve/suspend users, remove inappropriate content.
 
-### Step 10: Additional Features
+### Additional Features
 - Implement blog section for expert insights.
 - Add a contact form and newsletter subscription.
 
-### Step 11: Testing & Optimization
-- Perform unit tests (Jest, Mocha, Chai).
-- Conduct integration testing for API endpoints.
-- Optimize performance and security (rate limiting, CORS, helmet, etc.).
-
-### Step 12: Deployment
-- Deploy frontend on Vercel/Netlify.
-- Deploy backend on AWS/Render/DigitalOcean.
-- Host database on MongoDB Atlas.
-
-### Step 13: Maintenance & Updates
-- Monitor logs and analytics.
-- Release updates and fix bugs.
-- Improve UX/UI based on user feedback.
 
 ---
 
